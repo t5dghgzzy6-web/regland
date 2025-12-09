@@ -1,0 +1,33 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+logs/
+*.log
+
+# Environment
+.env
+.env.local
+
+# Dependencies (if using npm later)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Build outputs (if using build tools later)
+dist/
+build/
+.cache/
+
+# Temp files
+tmp/
+temp/
