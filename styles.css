@@ -80,6 +80,11 @@ body {
     text-decoration: none;
 }
 
+.logo-image {
+    height: 40px;
+    width: auto;
+}
+
 .logo-icon {
     font-size: 28px;
 }
