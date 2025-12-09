@@ -80,6 +80,17 @@ body {
     text-decoration: none;
 }
 
+.logo-icon-svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: 700;
+}
+
 .logo-image {
     height: 40px;
     width: auto;
