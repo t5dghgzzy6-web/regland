@@ -37,6 +37,36 @@
     </header>
 
     <!-- Hero Section -->
+
+    <!-- Sign Up Section -->
+    <section class="signup-section" id="signup">
+        <div class="container">
+            <h2>Sign Up</h2>
+            <form id="signup-form">
+                <label for="signup-email">Email:</label>
+                <input type="email" id="signup-email" name="email" required>
+                <label for="signup-password">Password:</label>
+                <input type="password" id="signup-password" name="password" required>
+                <button type="submit">Sign Up</button>
+                <div id="signup-message"></div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Sign In Section -->
+    <section class="signin-section" id="signin">
+        <div class="container">
+            <h2>Sign In</h2>
+            <form id="signin-form">
+                <label for="signin-email">Email:</label>
+                <input type="email" id="signin-email" name="email" required>
+                <label for="signin-password">Password:</label>
+                <input type="password" id="signin-password" name="password" required>
+                <button type="submit">Sign In</button>
+                <div id="signin-message"></div>
+            </form>
+        </div>
+    </section>
     <section class="hero">
         <div class="container">
             <div class="hero-content">
@@ -60,9 +90,76 @@
                 </div>
 
                 <div class="hero-cta">
-                    <a href="#get-started" class="btn-large btn-primary">Make My Case Registration-Ready</a>
-                    <a href="#demo" class="btn-large btn-secondary-outline">Watch Demo</a>
+                    <button id="open-signup" class="btn-large btn-primary">Sign Up</button>
+                    <button id="open-demo" class="btn-large btn-secondary-outline">Book a Demo</button>
                 </div>
+
+    <!-- Sign Up Modal -->
+    <div id="signup-modal" class="modal" style="display:none;">
+        <div class="modal-content">
+            <span class="close" id="close-signup">&times;</span>
+            <h2>Sign Up</h2>
+            <form id="signup-form">
+                <label for="signup-name">Name:</label>
+                <input type="text" id="signup-name" name="name" required>
+                <label for="signup-organisation">Organisation:</label>
+                <input type="text" id="signup-organisation" name="organisation" required>
+                <label for="signup-email">Email:</label>
+                <input type="email" id="signup-email" name="email" required>
+                <label for="signup-password">Password:</label>
+                <input type="password" id="signup-password" name="password" required>
+                <button type="submit">Sign Up</button>
+                <div id="signup-message"></div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Book a Demo Modal -->
+    <div id="demo-modal" class="modal" style="display:none;">
+        <div class="modal-content">
+            <span class="close" id="close-demo">&times;</span>
+            <h2>Book a Demo</h2>
+            <div class="calendly-inline-widget" data-url="https://calendly.com/your-calendly-username/demo" style="min-width:320px;height:630px;"></div>
+            <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+        </div>
+    </div>
+                
+                <!-- Sign Up Section -->
+                <section class="signup-section" id="signup">
+                    <div class="container">
+                        <h2>Sign Up</h2>
+                        <form id="signup-form">
+                            <label for="signup-name">Name:</label>
+                            <input type="text" id="signup-name" name="name" required>
+                            <label for="signup-organisation">Organisation:</label>
+                            <input type="text" id="signup-organisation" name="organisation" required>
+                            <label for="signup-email">Email:</label>
+                            <input type="email" id="signup-email" name="email" required>
+                            <label for="signup-password">Password:</label>
+                            <input type="password" id="signup-password" name="password" required>
+                            <button type="submit">Sign Up</button>
+                            <div id="signup-message"></div>
+                        </form>
+                    </div>
+                </section>
+
+                <!-- Book a Demo Section -->
+                <section class="demo-section" id="book-demo">
+                    <div class="container">
+                        <h2>Book a Demo</h2>
+                        <!-- Calendly Inline Widget: swap out the data-url for your own Calendly link. -->
+                        <div class="calendly-inline-widget" data-url="https://calendly.com/your-calendly-username/demo" style="min-width:320px;height:630px;"></div>
+                        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+                        <!-- To swap out Calendly, remove the above div/script and insert your new calendar provider's embed code. -->
+                    </div>
+                </section>
+
+                <!--
+                TESTING INSTRUCTIONS:
+                - For Sign Up: Fill in all fields and submit. You should see a green success message if the backend is running.
+                - For Sign In: Use the email and password you signed up with (mock only, no real authentication yet).
+                - For Book a Demo: Use the Calendly widget to book a slot. (Replace the Calendly link with your own.)
+                -->
 
                 <div class="hero-tagline">
                     <p>Because "submitted" is not the same as "registered".</p>
